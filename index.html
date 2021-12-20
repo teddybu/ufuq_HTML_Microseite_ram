@@ -126,32 +126,35 @@
 .overlay {
  position: fixed;
 
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color:  rgba(0, 0, 0, 0.5);
-  z-index: 100;
-  padding-top: 50px;
-   overflow: scroll;
   overflow-x: hidden;
-    margin-bottom: 300px;
+display: none;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 100;
+padding-top: 50px;
+overflow: scroll;
+    overflow-x: scroll;
+overflow-x: hidden;
+    padding-top: 20vh;
+
 
 }
         
         .overlay .all-tiles {
             background-color: white;
-            margin-top: 20vh;
+            margin-top: 0;
             padding: 16px;
         }
 
 .overla-back {
-    width: 100%;
+    width: 97vw;
     height: 50px;
-    position: fixed;
+
   
     z-index: 110;
     top: 0;
@@ -163,6 +166,10 @@
     
     background-color: #faa61a;
     font-size: 20px;
+    max-width: 800px;
+        margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
 }
 
 
@@ -180,11 +187,13 @@
 }
 
 
-.overla-back::before {
+.overla-back::after {
     content: "\f00d";
     font-family: "Font Awesome 5 Free";
     font-weight: lighter;
     font-size: 34px;
+    width: 100%;
+text-align: right;
 }
 
 
@@ -199,6 +208,7 @@
             margin-left: auto;
             margin-right: auto;
                 margin-top: 64px;
+            width: 97vw;
 }
 
         
@@ -214,7 +224,7 @@ margin-bottom: 1.4285em;
     .hinte-tile {
         border: solid 1px #faa61a;
 padding: 8px;
-        margin: 16px;
+   
         
         }
         
@@ -230,9 +240,8 @@ gap: 16px;
         
                 .rama-footer p {
 flex-grow: 1;
-width: 33vw;
+width: 100vw;
 min-width: 300px;
-                    margin-top: 25px;
         }
     
         
@@ -262,15 +271,24 @@ min-width: 300px;
 }
 ol, ul {
     padding: 0;
-    list-style-type: persian;
+
     font-size: 1.5em;
     margin: 16px;
+    color: #4A4A4A;
 }
     
         .noscroll { 
   overflow: hidden;
 }
   
+        h1 {
+            font-size: 4em;
+        }
+        
+        h2 {
+            font-size: 2.5em;
+        }
+        
     </style>
     
     
@@ -281,13 +299,16 @@ ol, ul {
 
   
     
-<body id="main" style="display: flex; flex-wrap: wrap; flex-flow: column">
+<body id="main" style="display: flex; flex-wrap: wrap; flex-flow: column;   margin: 0;
+  padding: 0;
+  box-sizing: border-box; overflow-x: hidden">
     
      
 <header class="all-tiles">
-<h1>Themen und Fragen rund um den Ramadan</h1>
+<h1>„Wie, schon wieder Ramadan!?“</h1>
+    <h2>Themen und Fragen rund um den Ramadan</h2>
     
-<p>Hier werden Themen und Fragen rund um den Ramadan in der Schule dar, spricht ‚typische‘ Konflikte an und gibt Hinweise für eine gleichermaßen wertschätzende wie pragmatische Praxis im Schulalltag. 
+<p>Hier werden Themen und Fragen rund um den Ramadan in der Schule dargestellt, spricht ‚typische‘ Konflikte und Hinweise für eine gleichermaßen wertschätzende wie pragmatische Praxis im Schulalltag gegeben.
 </p><p>
 Auf den folgenden Seiten finden Sie dazu:</p>
     
@@ -316,9 +337,9 @@ Auf den folgenden Seiten finden Sie dazu:</p>
 
   
          
-<section id="schaubild">     <h2 class="all-tiles">Interaktive Schaubild</h2>
+<section id="schaubild">     <h2 class="all-tiles">Interaktives Schaubild</h2>
 
-<section style="width: 100vw;
+<section style="width: 97vw;
 position: relative;
 overflow: auto;">    <section  class="htmlNoPages" style="height: 848px;
 width: 1200px;
@@ -384,7 +405,7 @@ margin-right: auto;">
 <p><b>Schülerin (15 Jahre, Berlin):</b> „Natürlich faste ich, zumindest an vielen Tagen. Ich gebe zu, dass ich es nicht immer ganz durchhalte. Besonders schwer ist es, wenn man einen Schulausflug macht oder zu Feiern eingeladen ist, wo alle essen und trinken. Eigentlich wollte ich aber gar nicht über diese Härten sprechen. Für mich ist der Ramadan der wichtigste Monat des Jahres. Er bringt mich Gott näher und es ist schön, viel Zeit mit der Familie zu verbringen.“ <br>
     
                                                   <audio controls>
-  <source src="audio/Schuelerin3.mp3" type="audio/mpeg">
+  <source src="audio/Schuelerin1.mp3" type="audio/mpeg">
 Ihr Browser unterstützt kein Audiowiedergabe
 </audio> 
     
@@ -399,21 +420,21 @@ Ihr Browser unterstützt kein Audiowiedergabe
     </p><p>
 <b>Schülerin (13 Jahre, Berlin):</b> „Ramadan ist schön und ich versuche, ihn zu genießen. Wenn ich mir von meinen Lehrern etwas wünschen dürfte, dann fände ich es am besten, wenn sie mich einfach in Ruhe lassen. Oder, das wäre natürlich ganz toll: Wir könnten ja einmal ein Klassenfest am Abend machen, sodass alle zusammen essen und meine Klasse einmal mitbekommt, wie lustig es ist. Aber ob das funktioniert? Sollte man es einfach mal probieren.“ <br>
                                          <audio controls>
-  <source src="audio/Schueler4.mp3" type="audio/mpeg">
+  <source src="audio/Schuelerin3.mp3" type="audio/mpeg">
 Ihr Browser unterstützt kein Audiowiedergabe
 </audio> 
 
     </p><p>
 <b>Schüler (16 Jahre, Berlin):</b> „Ich bin noch nicht ganz sicher, wie ich es dieses Jahr mache. Meine Mutter will nicht, dass ich die ganze Woche faste, wegen der Schule. Aber in meiner Klassenstufe gibt es einige Jungen, die Druck machen. Sie sagen: Wer nicht richtig fastet, ist kein Muslim. Meine Mutter sagt, ich soll mich nicht darum kümmern, was die anderen sagen. Leicht ist das aber nicht. Es wäre gut, wenn mir jemand helfen könnte, aber wer sollte das sein?“<br>
                                 <audio controls>
-  <source src="audio/Schueler2.mp3" type="audio/mpeg">
+  <source src="audio/Schueler4.mp3" type="audio/mpeg">
 Ihr Browser unterstützt kein Audiowiedergabe
 </audio> 
          
     </p><p>
 <b>Lehrerin (Naturwissenschaften, Gesamtschule):</b> „Ich gebe offen zu: Ich halte nichts vom Ramadan. Schon gar nicht für Kinder in der Pubertät. Mit denen ist doch auch so schon kaum etwas anzufangen. Wenn die dann noch fasten, können sie sich endgültig nicht mehr konzentrieren. Wenn sie wenigstens etwas trinken würden. Aber dieses Fasten der Muslime ist doch gesundheitsschädlich. Ich habe den Eindruck, dass die meisten fasten, weil sie von ihren Eltern dazu angehalten werden. Bei einem Jungen in meiner Klasse hatte ich letztes Jahr aber auch den Eindruck, dass er es macht, um mich zu ärgern!“ 
                        <br>       <audio controls>
-  <source src="audio/Lehrerin4.mp3" type="audio/mpeg">
+  <source src="audio/Lehrerin1.mp3" type="audio/mpeg">
 Ihr Browser unterstützt kein Audiowiedergabe
 </audio> 
          
@@ -427,14 +448,14 @@ Ihr Browser unterstützt kein Audiowiedergabe
     </p><p>
 <b>Lehrerin (Kunst, Gymnasium):</b> „Ich finde es gut, dass die Kinder etwas haben, das ihnen wichtig ist. Viele sind ab einem bestimmten Alter nicht mehr leicht zu begeistern. Ich persönlich würde es nicht schaffen, einen Monat lang zu fasten und so haben die Kinder, die das schaffen, meine volle Bewunderung. Ich versuche, ihnen das zu zeigen. Dabei bemühe ich mich, sie nicht zu sehr zu Exoten in der Klasse zu machen. Das würde ihnen das Leben schwermachen. Ob mir das gelingt? Naja, wahrscheinlich nur halb.“
                    <br>    <audio controls>
-  <source src="audio/Lehrerin2.mp3" type="audio/mpeg">
+  <source src="audio/Lehrerin3.mp3" type="audio/mpeg">
 Ihr Browser unterstützt kein Audiowiedergabe
 </audio> 
 
     </p><p>
 <b>Lehrerin (Deutsch/Mathe, Gesamtschule):</b> „Wenn ich ganz ehrlich bin: Ich fühle mich überfordert. Wir haben sowieso schon viele Probleme in der Klasse und jetzt stehen die letzten Klassenarbeiten an. Wenn die dann die Arbeiten verhauen und mündlich schlecht sind, weil sie nichts getrunken und kaum geschlafen haben – dann heißt es wieder, ich sei intolerant. Aber wäre es gerecht, sie besser zu benoten? Ich wünsche mir mehr Anleitung der Schulleitung!“
        <br>   <audio controls>
-  <source src="audio/Lehrerin1.mp3" type="audio/mpeg">
+  <source src="audio/Lehrerin4.mp3" type="audio/mpeg">
 Ihr Browser unterstützt kein Audiowiedergabe
 </audio>
 </p>
@@ -543,7 +564,7 @@ Gesunde Jugendliche ab 14 Jahren können sich demnach für das Fasten entscheide
        <ul>
 	      <li> …Gesprächsangebote vor dem Ramadan schaffen, in deren Rahmen mit Jugendlichen und Eltern über das Fasten in der Schule und die schulischen Verpflichtungen gesprochen wird.</li>
 	      <li>…frühzeitige und verbindliche  Absprachen mit Schüler*innen und Eltern über den Umgang mit gesundheitsbeeinträchtigenden Situationen treffen und Eltern in schwierigen Fällen einbeziehen.</li>
-	      <li>…ihre Anerkennung des Ramadan und der Fastenden signalisieren, etwa indem sie die Feiertage in der Jahresplanung beachten, nicht das Gefühl vermitteln, Fasten sei ungesund oder zu einem gemeinsamen Iftar-Essen (Fastenbrechen) in Kooperation mit Eltern einladen, um das Gefühl der Zusammengehörigkeit aller Beteiligten zu stärken.</li>
+	      <li>…ihre Anerkennung des Ramadans und der Fastenden signalisieren, etwa indem sie die Feiertage in der Jahresplanung beachten, nicht das Gefühl vermitteln, Fasten sei ungesund oder zu einem gemeinsamen Iftar-Essen (Fastenbrechen) in Kooperation mit Eltern einladen, um das Gefühl der Zusammengehörigkeit aller Beteiligten zu stärken.</li>
            <li>…zu Beginn des Ramadans Gelegenheiten schaffen, um allgemein über die Bedeutung und den Sinn des Fastens zu sprechen: In welchen Religionen wird gefastet, wie kann alternativ gefastet werden? Welche Fragen und Probleme können entstehen? Ziel solcher Formate: Respekt vor denen, die fasten, und denen, die nicht fasten.</li>
        </ul>
     
@@ -613,21 +634,23 @@ Vielleicht helfen Ihnen auch die Praxishinweise und Handreichungen für die Schu
 Sie reagiert auf Herausforderungen der Migrationsgesellschaft, die sich auch in der Bildungs- und Jugendarbeit stellen. Hierzu zählen neben polarisierenden Einstellungen und Verhaltensweisen und der Verbreitung von Ungleichwertigkeitsideologien auch eine wachsende Sichtbarkeit von antimuslimischen und von islamistischen Einstellungen.
 Mit Beratungen und Fortbildungen für Fachkräfte sowie Praxisformaten für Jugendliche fördert die Fachstelle Handlungskompetenzen im Umgang mit gesellschaftlicher und religiöser Diversität und unterstützt bei der Konzeption und Umsetzung von Angeboten in Pädagogik, politischer Bildung und Präventionsarbeit.</p></section>
     
-    <footer class="rama-footer">
+    <footer class="rama-footer all-tiles">
         
 
 
-     
-<img style="width: 100px; margin-top: 27px;
+
+        <img style="min-width: 300px; max-width: 427px; margin-top: 8px; margin-right: 22px; width: 47vw;
+height: fit-content" src="assets/BMFSFJ_DL_mitFoerderzusatz.png" alt=""/>
+<div><img style="width: 100px; margin-bottom: 48px;
 height: fit-content" src="assets/media_de_B_SEN_Justva_Logo_DE_V_PW_4C.png" alt=""/>
         <img style="width: 200px;
-height: fit-content;" src="assets/demokratie.vielfalt.respekt_landesprogramm.jpg" alt=""/>
+height: fit-content;" src="assets/demokratie.vielfalt.respekt_landesprogramm.jpg" alt=""/></div>
 
-
+     <p class="has-mid-font-size">„Veröffentlichung stellt Meinungsäußerung des BMFSFJ oder des BAFzA dar. Für inhaltliche Aussagen tragen die Autorinnen und Autoren <br> die Verantwortung.“</p>
          
       <p>  Wir richten unseren Dank an die Landesstelle für Gleichbehandlung – gegen Diskriminierung im Rahmen des Landesprogramms Islamismusprävention und Prävention von antimuslimischem Rassismus sowie an das BMFSFJ für die Förderung des Projektes im Rahmen des Bundesprogrammes „Demokratie leben!“.</p>
 
-        <p class="has-mid-font-size">„Veröffentlichung stellt Meinungsäußerung des BMFSFJ oder des BAFzA dar. Für inhaltliche Aussagen tragen die Autorinnen und Autoren die Verantwortung.“</p>
+   
       
     </footer>
      
